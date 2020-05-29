@@ -1,1 +1,1 @@
-# javascript-basico
+# jogo-da-cobrinha
