@@ -13,19 +13,23 @@ var ptn = document.getElementById('ptn')
 var temporizador = 0
 var tempo = document.getElementById("tempo")
 
+var mos = document.getElementById("mostrador")
+
+var direita = document.getElementById("direita")
+var meio = document.getElementById("meio")
+var esquerda = document.getElementById("esquerda")
+
 function temporizar(){
     temporizador++
     tempo.innerHTML = temporizador
 }
 
 function jogar(){
-   if(direction ==" ")
-   {direction = "right"
-   
-    var tpo = setInterval (temporizar ,1000)
-    }else{
-       direction = " "
-   }
+   if(direction ==" "){
+    direction = "right"
+    mos.innerHTML = "<h2>BOA SORTE!</h2>"
+    var t = setInterval (temporizar ,1000)
+    }
 } 
 
 let food = {
@@ -70,6 +74,9 @@ function iniciarjogo(){
             clearInterval(jogo);
             alert("Game Over")
             alert("Sua pontuação foi de "+ pontuacao +" frutas, Em um tempo de "+ temporizador + " segundos")
+            esquerda.innerHTML = " "
+            direita.innerHTML = " "
+            meio.innerHTML = "<h1>SUA PONTUAÇÃO FOI DE "+ pontuacao +" FRUTAS, EM UM TEMPO DE "+ temporizador + " SEGUNDOS, PARABÉNS!</h1>"
         }
     }
     

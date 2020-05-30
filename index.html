@@ -9,31 +9,35 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-    <div id="tudo" class="container-fuid text-center margin">
-        <div class="row">
+        <div class="container-fuid text-center margin">
+            <div class="row">
 
-            <div class="col-lg-3 text-center">
-                <div id="temporizador">
-                    <h2>TEMPO:<div id="tempo">0</div></h2>
-                </div>
-                <div id="pontuacao">
-                <h2>PONTUAÇÃO:<div id="ptn">0</div></h2>
-                <button onclick="jogar()" id="jogar">JOGAR</button>
-                </div>
-            </div>
+                <div class="col-lg-3 text-center" id="esquerda">
+                    <div id="temporizador">
+                        <h2>TEMPO:<div id="tempo">0</div></h2>
+                    </div>
+                    <div id="pontuacao">
+                    <h2>PONTUAÇÃO:<div id="ptn">0</div></h2>
 
-            <div class="col-lg-6">
-            <h1>JOGO DA COBRINHA</h1>
-            <canvas id="snake" width="512" height="512"></canvas>
-            </div>
-            
-            <div class="col-lg-3">
-                <div id="cobrinha">
-                <img src="cobrinha.jpg" class="rounded-circle" width="300px" height="300px">
+                    <div id="mostrador">
+                    <button onclick="jogar()" id="jogar">JOGAR</button>
                 </div>
-            </div>
 
-        </div>
-    </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" id="meio">
+                <h1>JOGO DA COBRINHA</h1>
+                <canvas id="snake" width="512" height="512"></canvas>
+                </div>
+                
+                <div class="col-lg-3" id="direita">
+                    <div id="cobrinha">
+                    <img src="cobrinha.jpg" class="rounded-circle" width="300px" height="300px">
+                    </div>
+                </div>
+
+            </div>
+        </div>    
 </body>
 </html>
