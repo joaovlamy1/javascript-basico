@@ -6,7 +6,19 @@ snake[0] = {
     x: 8 * box,
     y: 8 * box
 }
-let direction = "right";
+
+var pontuacao = 0
+var ptn = document.getElementById('ptn')
+var temporizador = 0
+
+let direction =" ";
+function jogar(){
+   if(direction ==" ")
+   {direction = "right"}else{
+       direction = " "
+   }
+   
+}
 let food = {
     x: Math.floor(Math.random() * 15 + 1) * box,
     y: Math.floor(Math.random() * 15 + 1) * box
@@ -19,7 +31,7 @@ function criarBG(){
 
 function criarCobrinha(){
     for(i=0; i <snake.length ; i++){
-        context.fillStyle = "green"
+        context.fillStyle = "blue"
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
@@ -68,6 +80,8 @@ function iniciarjogo(){
     }else{
       food.x = Math.floor(Math.random() * 15 + 1) * box,
       food.y = Math.floor(Math.random() * 15 + 1) * box
+      pontuacao++
+      ptn.innerHTML = pontuacao
     }
 
     let newHead = {

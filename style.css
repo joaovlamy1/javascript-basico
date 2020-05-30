@@ -5,7 +5,47 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: rgb(18, 15, 192);
 }
 h1{
     color: chocolate;
 }
+#pontuacao{
+    position: relative;
+    top: 250px;
+    right: 100px;
+}
+#ptn{
+    float: right;
+    position: relative;
+    top: 2px;
+}
+#cobrinha{
+    position: relative;
+    top: 150px;
+    left: 100px;
+}
+#jogar{
+    font-family: Arial;
+    font-size: medium;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+ }
+ #jogar{
+    background: rgb(46, 96, 161);
+    color: white;
+    box-shadow:0 5px 0 rgb(29, 62, 94);
+ }
+ #jogar:hover{
+    background: rgb(27, 57, 90);
+    color: white;
+    box-shadow:0 5px 0 rgb(17, 33, 56);
+ }
+ #jogar:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+ }
