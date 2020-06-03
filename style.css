@@ -3,39 +3,58 @@ body{
     width: 95;
     display: flex;
     justify-content: center;
+    align-items: center;  
+    flex-direction: row;
+    background-color: lightblue;
+}
+div#esquerda{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;  
+    flex-direction: column;
+    width: 150px;
 }
-#tempo{
-    float: right;
-    position: relative;
-    top: 2px;
-    right: 40px;
+div#direita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
 }
-#temporizador{
+img{
     position: relative;
-    top: 100px;
-    right: 100px;
+    left: 30px;
 }
 h1{
-    font-size: 150px;
+    font-size: 60px;
+}
+#temporizador{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: row;
 }
 #pontuacao{
-    position: relative;
-    top: 250px;
-    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: row;
+}
+#tempo{
+    font-size: 30px;
 }
 #ptn{
-    float: right;
-    position: relative;
-    top: 2px;
+    font-size: 30px;
 }
-#cobrinha{
-    position: relative;
-    top: 150px;
-    left: 100px;
+div#meio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 80px; 
+    padding-left: 80px; 
 }
-#jogar{
+.jogar{
     font-family: Arial;
     font-size: medium;
     text-transform: uppercase;
@@ -44,17 +63,17 @@ h1{
     padding: 10px;
     cursor: pointer;
  }
- #jogar{
+ .jogar{
     background: rgb(46, 96, 161);
     color: white;
     box-shadow:0 5px 0 rgb(29, 62, 94);
  }
- #jogar:hover{
+ .jogar:hover{
     background: rgb(27, 57, 90);
     color: white;
     box-shadow:0 5px 0 rgb(17, 33, 56);
  }
- #jogar:active{
+ .jogar:active{
     position: relative;
     top: 5px;
     box-shadow: none;

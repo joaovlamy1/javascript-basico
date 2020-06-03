@@ -44,7 +44,7 @@ function criarBG(){
 
 function criarCobrinha(){
     for(i=0; i <snake.length ; i++){
-        context.fillStyle = "blue"
+        context.fillStyle = "green"
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
@@ -79,7 +79,7 @@ function iniciarjogo(){
             alert("Sua pontuação foi de "+ pontuacao +" frutas, Em um tempo de "+ temporizador + " segundos")
             esquerda.innerHTML = " "
             direita.innerHTML = " "
-            meio.innerHTML = "<h1>SUA PONTUAÇÃO FOI DE "+ pontuacao +" FRUTAS, EM UM TEMPO DE "+ temporizador + " SEGUNDOS, PARABÉNS!</h1>"
+            meio.innerHTML = "<h1>SUA PONTUAÇÃO FOI DE "+ pontuacao +" FRUTAS, EM UM TEMPO DE "+ temporizador + " SEGUNDOS, PARABÉNS!</h1> "
         }
     }
     
