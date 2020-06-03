@@ -1,1 +1,1 @@
-# jogo-da-cobrinha
+# jogo-da-cobrinha-js
